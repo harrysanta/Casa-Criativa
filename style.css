@@ -1,0 +1,366 @@
+/*
+    CSS
+    Cascadind StyleSheet
+
+    BOX
+    Conteudo da Caixa
+    Espaçamento
+    Preenchimento
+    Bordas
+    
+*/
+
+/* GLOBAL */
+
+body {
+    background: rgb(224, 224, 224);
+    color: rgb(3, 3, 3);
+    margin: 0;
+}
+
+body.hideScroll {
+    overflow: hidden;
+
+}
+
+a {
+    color: #ff5E84;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    font-weight: bold;
+    color: #0c0406;
+    text-decoration: underline;
+}
+
+#container {
+    width: 90%;
+    max-width: 980px;
+    margin: 40px auto;
+    display: flex;
+
+}
+
+#intro{
+    width: 300px;
+    margin-right: 64px;
+}
+
+main {
+    margin: 32px 0px;
+}
+
+main p{
+    font-family: Roboto;
+}
+
+#buttons{
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button footer .idea a{
+    font-family: Oswald;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+button {
+    font-family: Oswald;
+    background: none;
+    color: #ff5E84FF;
+    border: none;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
+.button{
+    background: #ff5e84;
+    color: white;
+
+    width: 150px;
+    height: 40px;   
+
+    font-family: Oswald;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+    box-shadow: 3px 3px 7px #ff5E84FF;
+
+    
+    cursor: pointer;
+}
+
+
+.button:hover{
+    background-color: #0984e3;
+    text-decoration: none;
+}  
+
+/* PADRAO */    
+
+footer{
+    text-align: center;
+}
+
+footer a{
+    opacity: 0.8;
+}
+
+.idea{
+    display: inline-flex;
+    
+    margin-bottom: 20px;
+
+    background-color: #FFF;
+    border: 3px solid pink;
+    box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.8);
+    border-radius: 25px;
+    padding: 20px 15px;
+}
+
+.idea img{
+    width: 60px;
+    height: 60px;
+    margin-right: 32px;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+.idea h3{
+    margin: 0;
+    padding-right: 15%;
+    text-align: center;
+    color: #ff5E84FF;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Bebas Neue;
+}
+
+.idea p{
+    margin: 8px 0;
+    color: #ff5E84FF;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Dancing Script;
+}
+
+.idea .description {
+    margin: 16px 0;
+    font-family: Roboto;
+}
+
+/* Modal */
+
+#modal {
+    background: #ff5E84FF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: 500ms;
+}
+
+#modal.addScroll{
+    overflow: auto;
+}
+
+#modal .content {
+    
+    color: white;
+}
+
+#modal .content h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal form {
+    width: 80%;
+    max-width: 800px;
+
+    margin: 0 auto 15%;
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 5px solid white;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#modal .content {
+    font-family: Bebas Neue;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+form label {
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+}  
+
+form a{
+    width: 150px;
+    height: 40px;
+    background-color: #ffFFFF22;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    align-self: end;
+    font-size: 16px;
+    letter-spacing: 1px;  
+    transition: 500ms;
+}
+
+form a:hover{
+    background-color: cyan;
+    color: rgb(136, 136, 136);
+    text-decoration: none;
+
+}
+
+form button{
+    background: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 32px;
+    grid-column: 2;
+    justify-self: end;
+    font-family: Bebas Neue;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: 500ms;
+}
+
+form button:hover{
+    background-color: cyan;
+    color: rgb(136, 136, 136);
+    text-decoration: none;
+}
+
+#modal.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* IDEIAS.HTML */
+
+#page-ideias #container {
+    display:block;
+}
+
+nav{
+    font-family: Bebas Neue;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+#page-ideias, #tittle{
+    font-family: Bebas Neue;
+    font-size: 25px;
+}
+
+#page-ideias header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-ideias nav{
+    display: flex;
+    align-items: center;
+}
+
+#page-ideias nav li{
+    list-style-type: none;
+    margin-right: 16px;
+}
+
+#page-ideias nav li a{
+    color: #25282B;
+}
+
+#page-ideias nav li a.button{
+    color: #ffffff;
+    font-family: Bebas Neue;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#page-ideias nav li:last-child {
+    margin: 0px;
+}
+
+
+
+section#tittle {
+    text-align: center;
+   
+}
+
+section#tittle p{
+    opacity: 0.7;
+    margin: 0;
+}
+
+section#tittle h1{
+    margin: 0;
+}
+
+section#ideias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+section#ideias .idea {
+    margin: 0;
+}
+
+section#ideas,
+section#tittle,
+footer {
+    margin-top: 64px;
+}

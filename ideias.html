@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ideias - Casa Criativa</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500&family=Lobster&family=Oswald:wght@300;400;500;700&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <!-- fonts -->
+</head>
+<body id="page-ideias">
+
+    <div id="container">
+        <header>
+            <a href="index.html">
+            <img src="Logo.png" alt="Imagem da logo marca"></a>
+            <nav>
+                <li><a href="index.html">Início</a></li>
+                <li><a class="button" href="#" onclick="onOff()">Nova Ideia</a></li>
+            </nav>
+        </header>
+        <section id="tittle">
+            <p>em exibição</p> 
+            <h1>Ideias</h1>
+        </section>
+        <main>
+            <section id="ideias">
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/png/512/2729/2729007.png"
+                        alt="Imagem de Curso de Programação">
+                    <div class="content">
+                        <h3>Cursos de Programação</h3>
+                        <p>Estudo</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id officia nemo nostrum nam.
+                            Praesentium cupiditate laboriosam incidunt nobis sit eius quo quam, alias delectus ipsa modi,
+                            beatae hic placeat.
+                        </div>
+                        <a href="#">Ir para a ideia</a>
+                    </div>
+                </div>
+    
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/png/512/2729/2729005.png" alt="Imagem de Exercícios">
+                    <div class="content">
+                        <h3>Exercícios</h3>
+                        <p>Saúde</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id officia nemo nostrum nam.
+                            Praesentium cupiditate laboriosam incidunt nobis sit eius quo quam, alias delectus ipsa modi,
+                            beatae hic placeat.
+                        </div>
+                        <a href="#">Ir para a ideia</a>
+                    </div>
+                </div>
+    
+                <div class="idea">
+                    <img src="https://image.flaticon.com/icons/png/512/2729/2729027.png" alt="Imagem de Meditação">
+                    <div class="content">
+                        <h3>Meditação</h3>
+                        <p>Mentalidade</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id officia nemo nostrum nam.
+                            Praesentium cupiditate laboriosam incidunt nobis sit eius quo quam, alias delectus ipsa modi,
+                            beatae hic placeat.
+                        </div>
+                        <a href="#">Ir para a ideia</a>
+                    </div>
+                </div>
+
+                <div class="idea">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2729/2729032.png" alt="Imagem de Karaokê">
+                    <div class="content">
+                        <h3>Karaokê</h3>
+                        <p>Diversão em Família</p>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id officia nemo nostrum nam.
+                            Praesentium cupiditate laboriosam incidunt nobis sit eius quo quam, alias delectus ipsa modi,
+                            beatae hic placeat.
+                        </div>
+                        <a href="#">Ir para a ideia</a>
+                    </div>
+                </div>
+    
+    
+            </section>
+        </main>
+        <footer>
+            Com ❤️ <a href="https://github.com/HaRRySanta" target="_blank">githubHaRRySanta</a>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="hide">
+        <div class="content">
+            <h1>Nova Ideia</h1>
+
+            <form action="">
+
+                <div class="inputwrapper">
+                    <label for="title">Título da Ideia</label>
+                    <input type="text" name="title">
+
+                </div>
+
+                <div class="inputwrapper">
+                    <label for="category">Categoria</label>
+                    <input type="text" name="category">
+
+                </div>
+
+                <div class="inputwrapper">
+                    <label for="images">Link da Imagem</label>
+                    <input type="url" name="images">
+
+                </div>
+
+                <div class="inputwrapper">
+                    <label for="description">Digite uma descrição para essa ideia</label>
+                    <textarea name="description" id="" cols="30" rows="10"></textarea>
+
+                </div>
+
+                <div class="inputwrapper">
+                    <label for="link">Link da ideia</label>
+                    <input type="url" name="link">
+
+                </div>
+                
+                <a href="#" onclick="onOff()">Voltar</a>
+                <button>Salvar</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Chamando os Comandos JS-->
+    <script src="scripts.js"></script>
+   
+
+</body>
+</html>
